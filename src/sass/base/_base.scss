@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    color: $color-background-color;
+  }
+  
+  .todoContainer {
+      width: 500px;
+      margin: 100px auto;
+    
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .todoCreateForm {
+      display: flex;
+      gap: 5px;
+    }
+    
+    .todoInput {
+      flex-grow: 1;
+      width: 100%;
+      padding: 10px;
+      border-radius: 3px;
+      border: solid 1px #999;
+    }
+    
+    .buttonCreate {
+      border: none;
+      border-radius: 3px;
+      background-color: rgb(26, 76, 169);
+      color: $color-white;
+      padding: 10px 20px;
+    }
+    
+    .todosContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 10px;
+    }
+    
+    .todo {
+      padding: 10px;
+    }
+    
+    .todoTitle {
+      flex: 1;
+      font-size: 20px;
+    }
+    .todoUpdateForm,
+    .todoInfo {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .button {
+      border: none;
+      border-radius: 3px;
+      background-color: $color-button;
+      color: $color-white;
+      padding: 10px 20px;
+    }
+    
+    .buttonDelete {
+      border: none;
+      border-radius: 3px;
+      background-color: $color-button-delete;
+      color: $color-white;
+      padding: 10px 20px;
+    }
+
+    
+/* Estilo para el cuadro de color */
+.color-box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  gap: 5px;
+}
+
+/* Estilo para el contenedor de colores */
+.color-container {
+  margin-top: 10px;
+  width: 500px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.color-columns {
+  display: flex; /* Usar flexbox para alinear elementos en una fila */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en una nueva línea cuando no haya espacio */
+  gap: 10px; /* Espacio entre los elementos */
+}
+
+.buttonDeleteColores {
+  margin-top: 5px;
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttonDeleteColores:hover {
+  background-color: #ff0000;
+}
+
+/* EmpleadoAvatar.css */
+
+.empleado-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 350px;
+  height: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.empleado-img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.empleado-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right; /* Alinea el texto a la derecha */
+}
+
+.empleado-name {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.empleado-title {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.empleado-department {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  text-align: center; /* Alinea el texto del departamento al centro */
+}
+
+.empleado-list-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.empleado-list-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.empleado-list-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.titulo {
+  margin-top: 50px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.formulario {
+  margin: 20px auto; /* Alinea el formulario al centro horizontalmente */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  max-width: 300px; /* Ancho máximo del formulario */
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cita-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.citas {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center; /* Centra el título */
+}
+
+.no-citas {
+  color: #777;
+  font-style: italic;
+  text-align: center; /* Centra el texto si no hay citas */
+}
+
+.citas-list {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Hace que las citas se creen uno al lado del otro */
+  flex-wrap: wrap; /* Permite que las citas se ajusten a la pantalla si no hay espacio suficiente */
+  justify-content: space-between; /* Espaciado uniforme entre las citas */
+}
+
+.cita-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 48%; /* Ancho de cada cita para crearlas una al lado de la otra */
+  text-align: justify; /* Justifica el texto dentro de cada cita */
+  box-sizing: border-box; /* Evita que el borde añada ancho adicional */
+  display: flex; /* Permite centrar verticalmente el botón Eliminar */
+  align-items: center;
+}
+
+.cita-details {
+  flex: 1;
+}
+
+.eliminar-button {
+  background-color: #ff4c4c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px; /* Espacio entre el texto y el botón */
+}
+
+.eliminar-button:hover {
+  background-color: #ff3333;
+}
